@@ -1,0 +1,135 @@
+@font-face {
+    font-family: 'vazie';
+    src: url('../fonts/vazir.eot');
+    src: url('../fonts/vazir.ttf')  format('truetype'),
+         url('../fonts/vazir.woff2') format('woff2'),
+         url('../fonts/vazir.woff') format('woff');
+  }
+
+  *{
+      padding: 0;
+      margin: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body{
+      font-family: 'vazir';
+     direction: rtl;
+      position: relative;
+  }
+
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .btn {
+    width: 8rem;
+    height: 2.5rem;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    background-color: transparent;
+    font-size: 18px;
+    transition: .3s;
+  }
+  .btn-succes {
+    background-color: rgb(21, 180, 212);
+  }
+  .btn-succes:hover {
+    background-color: rgba(21, 180, 212, 0.779);
+  }
+.container {
+    position: relative;
+    width: 100%;
+    height: 98vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #506869;
+  }
+.profile {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 300px;
+    height: 378px;
+    background: linear-gradient(45deg, #fe4343, #61f0ff);
+    border-radius: 5px;
+    overflow: hidden;
+    user-select: none;
+}
+.icon {
+    width: 164px;
+    height: 164px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 20px;
+    cursor: pointer;
+    transition: .3s;
+}
+.icon img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    pointer-events: none;
+}
+.body {
+    margin: 2rem 0;
+    color: #fff;
+    word-spacing: 4px;
+}
+.footer .follow, .footer .send{
+    padding: 0.2rem 1rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    font-family: vazir;
+    cursor: pointer;
+    margin: .5rem;
+    transition: .3s;
+}
+.footer .follow:hover, .footer .send:hover{
+    transform: scale(.94);
+}
+.active {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    overflow: visible;
+    margin: 0;
+}
+.social {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+.social ul {}
+.social ul li {
+    width: 1.5rem;
+    height: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0.3rem 0;
+}
+.social ul li a{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
